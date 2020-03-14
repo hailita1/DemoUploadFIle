@@ -1,0 +1,9 @@
+<div class="form-group">
+  <h2>Thêm ảnh</h2>
+  <div *ngIf="isShow"
+       class="alert {{ (isSuccess) ? 'alert-success' : 'alert-danger' }}"
+       role="alert">
+    {{message}}
+  </div>
+  <div><input type="file" multiple="multiple" (change)="uploadFile($event)"></div>
+</div>
